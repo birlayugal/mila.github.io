@@ -1,1 +1,420 @@
-hello
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+
+		
+
+		body{
+			color: maroon;
+			}
+		
+		.container{
+			text-align: center;
+			width: 250px;
+			height: 300px;
+		}
+
+		.container img{
+			max-width:250px ;
+			max-height: 300px;
+		.2}
+
+		h1{
+			font-size: 1.5em;
+			padding-top: 100px;
+		}
+
+
+		.container a{
+			display: block;
+			padding-top: 10px;
+			font-size: 1.2em;
+		}
+
+		#menu-pictures{
+			display: grid;
+			grid-row-gap: 15px;
+			grid-column-gap: 30px;
+			width: 100%;
+			grid-template-columns: auto auto auto;
+						justify-content: space-evenly;
+
+		}
+
+		header{
+			font-size: 2em;
+		}
+
+		footer{
+			border-top: 1px solid maroon;
+			display: flex;
+			column-gap: 40%;
+		}
+
+		section{
+			border-top: 1px solid maroon;
+			min-height: 600px;
+			width: 100%;
+			text-align: center;				
+		}
+
+
+
+		a{
+			text-decoration: none;
+			color: maroon;
+		}
+
+		.order-title{
+			display: flex;
+			justify-content: space-between;
+			margin: 1px;
+		}
+		
+		ul li{
+			padding: 5px 20px ;
+			list-style: none;
+			font-size: 1.2em;
+			float: left ;
+			font-weight: bold;
+		}
+
+		ul li:hover{
+			background:grey ;
+			cursor: pointer;
+		}
+
+		.order-check{
+			display: flex;
+			justify-content: space-between;
+		}
+
+		ol li{
+			font-size: 1.5em;
+/*			list-style: none;
+*/			
+		}
+
+
+		#navbar{
+			display: flex;
+			column-gap: 40%;
+			top: 0;
+			left: 0;
+			position: fixed;
+			width: 100%;
+			height: 60px;
+			border-bottom: 1px solid maroon;
+		}
+
+		#navbar-image-div{
+			margin-left: 35px;
+		}
+
+		#main-section{
+			margin-top: 60px ;
+			text-align: center;
+			font-size: 2em;
+			background-image:url("C:\\Users\\YUGAL BIRLA\\Desktop\\CODE\\mila_cafe_1.jpg"),url("C:\\Users\\YUGAL BIRLA\\Desktop\\CODE\\mila_cafe_2.jpg") ;/*not-working*/
+			background-size: 100% 100%;
+			background-repeat: no-repeat, no-repeat;
+			background-blend-mode: normal;
+
+
+		}
+
+
+	</style>
+
+
+	
+</head>
+<body>
+	<nav id="navbar">
+		<div id="navbar-image-div">
+			<a href="#main-section">
+				<img src="C:\Users\YUGAL BIRLA\Desktop\CODE\mila_cafe_logo.jpg" style="width:80px; height: 60px; ">
+			</a>
+		</div>	
+		<ul>
+			<li>
+				<a href="#menu-section">
+					Menu
+				</a>
+			</li>
+			<li>
+				<a href="#order-section">
+					Order
+				</a>
+			</li>
+			<li>
+				<a href="#social-section">
+					Social
+				</a>
+			</li>
+			<li>
+				<a href="#contact-section">
+					Contact us
+				</a>
+			</li>
+		</ul>	
+	</nav>
+	<section id="main-section">
+			<header id="title">
+				<h1>
+					Mila Cafe
+				</h1>
+			</header>				
+				<p>
+					Best place in town to find Yourself 
+				</p>
+	</section>
+	<section id="menu-section">
+		<header>
+			<h2>Menu
+		</header>
+
+		<div id="menu-pictures">
+			<div class="container">
+				<img src="C:\Users\YUGAL BIRLA\Desktop\CODE\mila_food_1.jpg">
+				<a href="">
+					Order
+				</a>
+			</div>
+			<div class="container">
+				<img src="C:\Users\YUGAL BIRLA\Desktop\CODE\mila_food_2.jpg">
+				<a href="">
+					Order
+				</a>
+			</div>
+			<div class="container">
+				<img src="C:\Users\YUGAL BIRLA\Desktop\CODE\mila_food_3.jpg">
+				<a href="">
+					Order
+				</a>
+			</div>
+			<div class="container">
+				<img src="C:\Users\YUGAL BIRLA\Desktop\CODE\mila_food_4.jpg">
+				<a href="">
+					Order
+				</a>
+			</div>
+			<div class="container">
+				<img src="C:\Users\YUGAL BIRLA\Desktop\CODE\mila_food_5.jpg">
+				<a href="">
+					Order
+				</a>
+			</div>
+
+			<div class="container">
+				<img src="C:\Users\YUGAL BIRLA\Desktop\CODE\mila_food_6.jpg">
+				<a href="">
+					Order
+				</a>
+			</div>
+		</div>			
+	</section>
+	<section id="order-section">
+		<header>
+			<h2>
+				Order
+			</h2>
+		</header>
+		<article>
+				<div class="order-title">
+					<p>Item</p>
+					<p>price</p>
+				</div>	
+			<div>
+			
+			<ol>
+				<li>
+					<div class="order-check">
+						<span>
+							honey chilli patato 
+						</span>
+						<input type="checkbox" name="cart" value="1000" id="first" class="menu_item">
+						<span>
+							1000
+						</span>
+					</div>		
+				</li>
+				<li>
+					<div class="order-check">
+						<span>
+							honey chilli patato 
+						</span>
+						<input type="checkbox" name="cart" id="second" class="menu_item" value="1000">
+						<span>
+							1000
+						</span>
+					</div>		
+				</li>
+				<li>
+					<div class="order-check">
+						<span>
+							honey chilli patato 
+						</span>
+						<input type="checkbox" name="cart" id="third" class="menu_item" value="600">
+						<span>
+							600
+						</span>
+					</div>		
+				</li>
+				<li>
+					<div class="order-check">
+						<span>
+							honey chilli patato 
+						</span>
+						<input type="checkbox" name="cart" id="fourth" class="menu_item" value="700">
+						<span>
+							700
+						</span>
+					</div>		
+				</li>
+				<li>
+					<div class="order-check">
+						<span>
+							honey chilli patato 
+						</span>
+						<input type="checkbox" name="cart" id="fifth" class="menu_item" value="1000">
+						<span>
+							1000
+						</span>
+					</div>		
+				</li>
+				<li>
+					<div class="order-check">
+						<span>
+							honey chilli patato 
+						</span>
+						<input type="checkbox" name="cart" id="sixth" class="menu_item" value="800">
+						<span>
+							800
+						</span>
+					</div>		
+				</li>
+			</ol>
+
+				
+			</div>
+			<div class="order-title">
+				<p>
+					Order Total
+				</p>
+				<p id="ammount">
+					ammount
+				</p>
+			</div>
+			<button>
+				Pay
+			</button>
+		</article>
+
+
+
+		
+	</section>
+	<!-- <section id="social-section">
+		
+	</section>
+ -->
+	<section id="contact-section">
+		<header>
+			<h2>
+				Contact Us
+			</h2>
+		</header>
+
+		<article>
+			<p style="margin-top: 50px; ">
+				Address
+			</p>
+			<p>
+				Mila Cafe ,
+				192/193 Basement,
+				New Sakya House, Majnu ka Tila, New Delhi
+			</p>
+			<div>
+				<p style="margin-top: 50px;">
+					Contact -
+				</p>
+				<p >
+					Number
+				</p>
+			</div>
+			<div>
+				<p style="margin-top: 50px;">
+					Timings
+				</p>
+				<p>
+					9 AM - 11 PM
+				</p>
+			</div>
+		</article>
+	</section>	
+
+	<footer>
+		<p>
+			all rights reserved. copyright 
+			<a href="#">
+				@milacafe ltd.
+			</a>
+		</p>
+		<p>
+			<a href="#">
+				Privacy Policy
+			</a>
+			<!-- <a href="#" style="margin-left: 20px;">
+				Address
+			</a> -->
+		</p>
+	</footer>
+</body>
+
+<script type="text/javascript">
+		let items=document.querySelectorAll(".menu_item");
+ 		
+		var onChange = (event) => {
+			// console.log("abc" ,event.target.id);
+			let price=0;
+
+			for(let j=0; j<items.length; j++){
+
+				console.log(items[j].id," ",items[j].checked);
+				if(items[j].checked === true){
+					price += Number(items[j].getAttribute("value"));
+
+
+				}
+
+
+			}
+			document.querySelector("#ammount").innerHTML = price;
+			console.log(price);
+
+		}
+		// document.getElementById("first").addEventListener("change",onChange);
+		// document.getElementById("second").addEventListener("change",onChange);
+		// document.getElementById("third").addEventListener("change",onChange);
+		// document.getElementById("fourth").addEventListener("change",onChange);
+		// document.getElementById("fifth").addEventListener("change",onChange);
+		// document.getElementById("sixth").addEventListener("change",onChange);
+		
+
+
+
+
+		// console.log(items);
+ 		for(var i =0  ; i<items.length ; i++){
+ 			// console.log(items[i].id," ",items[i].id);
+ 			items[i].addEventListener("change", onChange);			
+ 		}
+
+
+
+	</script>
+</html>
